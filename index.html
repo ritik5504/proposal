@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter Proposal 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="loveMusic" src="Tu-Mera-Koyi-Na-Hoke-Bhi-Kuch-Lage(PagalNew.Com.Se).mp3" loop></audio> <!-- Romantic song -->
+    <div class="main">Propose Day</div>
+
+    <!-- Envelope -->
+    <div class="envelop" onclick="openEnvelope()">
+        <div class="envelop__front-paper">click here</div>
+        <div class="envelop__content hidden" id="letter">
+            <p class="letter-text">💖 My Love 💖</p>
+            <p class="letter-text">Will You Be Mine Forever? 💖</p>
+            <div class="buttons">
+                <button class="yes-btn" onclick="acceptProposal()">Yes ❤️</button>
+                <button class="no-btn" onmouseover="moveNoButton()">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- YES Page (Big & Animated) -->
+    <div id="yes-screen" class="hidden">
+        <h1 class="love-text">💖 YOU SAID YES! 💖</h1>
+        <p class="love-message" id="message1">I'm the happiest person in the world right now! 🥰</p>
+        <p class="love-message hidden" id="message2">You are my everything. I love you forever! ❤️</p>
+        <p class="love-message hidden" id="message3">This is the best day of my life! 🎉</p>
+        <p class="love-message hidden" id="message4">"Will you be the love story I never want to end?" 💍❤️</p>
+
+        <div class="hearts-container"></div> <!-- Floating hearts -->
+        <div class="roses-container"></div> <!-- Falling roses -->
+        <div class="fireworks"></div> <!-- Fireworks animation -->
+        
+
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

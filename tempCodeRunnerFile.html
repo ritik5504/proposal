@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter Proposal 💌</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hearts-background"></div> <!-- Floating hearts animation -->
+    <audio id="loveMusic" src="music.mp3" loop></audio> <!-- Romantic song -->
+
+    <div class="envelop" onclick="openEnvelope()">
+        <div class="envelop__front-paper"></div>
+        <div class="envelop__back-paper"></div>
+        <div class="envelop__up-paper"></div>
+        <div class="envelop__sticker"></div>
+        <div class="envelop__false-sticker"></div>
+        <div class="envelop__content hidden" id="letter">
+            <div class="love-notes">
+                <div class="note">
+                    <div class="note__text">
+                        <p>💖 My Love 💖</p>
+                        <p>Will You Be Mine Forever? 💖</p>
+                        <p>My life is incomplete without you. You make my world brighter and my heart lighter. 💕</p>
+                        <p>Say YES and make me the happiest person alive! 😍</p>
+                        <div class="buttons">
+                            <button class="yes-btn" onclick="acceptProposal()">Yes ❤️</button>
+                            <button class="no-btn" onmouseover="moveNoButton()">No 😢</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="yes-screen" class="hidden">
+        <h1>💖 You Said YES! 💖</h1>
+        <p>I'm the happiest person in the world right now! 🥰</p>
+        <p>You are my everything. I love you forever! ❤️</p>
+        <div class="roses"></div>
+    </div>
+</body>
+</html>
